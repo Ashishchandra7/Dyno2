@@ -1,0 +1,211 @@
+<div>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <div class="PartA">
+                    <div class="padng">
+                        <ion-row>
+                            <ion-col size="6">
+                                <div>
+                                    <img src="../../../assets/parts/Vector.png" alt=""><span
+                                        style="font-weight: bolder;">Part A</span>
+                                </div>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-row>
+                                    <ion-col>
+                                        <div><button (click)="EditClicked()" *ngIf="isEdit"><img class="iconHt" src="../../../assets/parts/pencil 1.png" alt=""></button> </div>
+                                        <div>
+                                            <ion-col size=""><button *ngIf="!isEdit" (click)="saveBtn()" > <img class="img" src="../../../assets/image/save btn.png" alt=""></button></ion-col>
+                                <ion-col size=""><button *ngIf="!isEdit" (click)="closeBtn()"> <img class="img" src="../../../assets/image/cancel btn.png" alt=""></button></ion-col>
+                                        </div>
+                                    </ion-col>
+                                    <ion-col>
+                                        <div><img class="iconHt" src="../../../assets/parts/103758_comment_icon 2.png"
+                                                alt=""></div>
+                                    </ion-col>
+                                    <ion-col>
+                                        <div>
+                                            <div class="box1" style="display: flex;">
+                                                <p>Draft</p> <img style="height: 8px;margin-left: 15px;margin-top: 5px;"
+                                                    src="../../../assets/parts/Polygon 14.png" alt="">
+                                            </div>
+
+                                        </div>
+                                    </ion-col>
+                                    <ion-col>
+                                        <div><img class="iconHt" src="../../../assets/parts/Group 25.png" alt=""></div>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <div class="box">
+                                <form>
+                                    <ion-row>
+                                        <div>
+                                            <ion-col size="">
+                                                <div>
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <label for="Title">Title</label>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <ion-input>shad</ion-input>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                </div>
+                                                <div>
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <label for="Title">Description</label>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <ion-input [value]="DescriptionValue"  [disabled]="!isEditMode">Lorem, ipsum dolor sit amet consectetur
+                                                                adipisicing elit</ion-input>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                </div>
+                                                <div style="margin: 8px;">
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <label for="Title">Part Type</label>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                    <ion-row>
+                                                        <ion-col size="">
+                                                            <div style="margin:8px;"><img
+                                                                    src="../../../assets/parts/booking 1 (1).png"
+                                                                    alt=""> Front End</div>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                </div>
+                                                <div style="margin: 8px;">
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <label for="Title">Tech Stack</label>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <div style="display: flex;">
+                                                                <div><img src="../../../assets/parts/Group 265.png"
+                                                                        alt=""></div>
+                                                                <div><img src="../../../assets/parts/Group 266.png"
+                                                                        alt=""></div>
+                                                                <div><img src="../../../assets/parts/Group 267.png"
+                                                                        alt=""></div>
+                                                            </div>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                </div>
+                                                <div style="margin: 8px;">
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <label for="Title">Contact</label>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <div>
+                                                                <img src="../../../assets/parts/Group 259.png" alt="">
+                                                            </div>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                </div>
+                                                <div style="margin: 8px;">
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <div>
+                                                                <img style="height: 20px;"
+                                                                    src="../../../assets/parts/Group 329.png" alt="">
+                                                            </div>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                </div>
+                                                <div style="margin: 8px;">
+                                                    <ion-row>
+                                                        <ion-col>
+                                                            <label for="Title">logo</label>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                    <ion-row>
+                                                        <ion-col>
+
+                                                            <img style="height: 35px;width: 35px;"
+                                                                src="../../../assets/parts/Vector.png" alt="">
+
+                                                        </ion-col>
+                                                    </ion-row>
+                                                </div>
+                                                <div>
+                                                    <div class="boxtopmargin">
+                                                        <ion-row>
+                                                            <ion-col>
+                                                                <div class="mlft">
+                                                                    <div>
+                                                                        <ion-row>
+                                                                            <ion-col size="1">
+                                                                                <div><img
+                                                                                        src="../../assets/image/326655_history_icon 1.png"
+                                                                                        alt=""></div>
+                                                                            </ion-col>
+                                                                            <ion-col size="1">
+                                                                                <div><img
+                                                                                        src="../../assets/Mask group.png"
+                                                                                        alt=""></div>
+                                                                            </ion-col>
+                                                                            <ion-col size="10" class="margm">last
+                                                                                modification : <span>28Mar @ 2022</span>
+                                                                                at
+                                                                                <span>11:07am</span>
+                                                                            </ion-col>
+                                                                        </ion-row>
+                                                                    </div>
+                                                                </div>
+                                                            </ion-col>
+                                                        </ion-row>
+                                                    </div>
+                                                </div>
+                                            </ion-col>
+                                        </div>
+                                    </ion-row>
+                                </form>
+                            </div>
+                        </ion-row>
+                    </div>
+                </div>
+            </ion-col>
+            <ion-col>
+                <div class="PartB">
+                    <div>
+                        <h3>Associated Products</h3>
+                        <div class="boxlist">
+                            <div>
+                                <ol>
+                                    <li> <img class="imgheight" src="../../../assets/parts/Dyno logo.png" alt="">
+                                        <span>Dyno</span>
+                                    </li>
+                                    <li> <img class="imgheight" src="../../../assets/parts/Group 207.png" alt="">
+                                        <span>Artist Pass</span>
+                                    </li>
+                                    <li> <img class="imgheight" src="../../../assets/parts/idea 5.png" alt="">
+                                        <span>Product idea</span>
+                                    </li>
+                                    <li> <img class="imgheight" src="../../../assets/parts/idea 6.png" alt="">
+                                        <span>ABC</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</div>

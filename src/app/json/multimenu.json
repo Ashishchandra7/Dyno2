@@ -1,0 +1,72 @@
+[
+    {
+        "id":1,
+        "FolderIcon":"./assets/image/3643773_fold_folder_archive_archives_document_icon 2.png",
+        "Title":"Vision",
+        "navigationUrl":"home/vision",
+        "image": "../../assets/image/Group 320.png",
+        "subItems": false,
+        "childItems":[
+            {
+            
+            "imageUrl":"./assets/image/Vector.png",
+            "text":"vision1" }
+    ]
+    },
+    {
+        "id":2,
+        "FolderIcon":"./assets/image/3643773_fold_folder_archive_archives_document_icon 2.png",
+        "Title":"Stories",
+        "navigationUrl":"home/stories",
+        "image": "../../assets/image/Group 321.png",
+        "subItems": false,
+        "childItems":[
+            {
+            
+            "imageUrl":"./assets/image/Group.png",
+            "text":"stories" }
+    ]
+    },
+    {
+        "id":3,
+        "FolderIcon":"./assets/image/3643773_fold_folder_archive_archives_document_icon 2.png",
+        "Title":"User interface",
+        "navigationUrl":"home/userInterface",
+        "image": "../../assets/image/Group 322.png",
+        "subItems": false,
+        "childItems":[
+            {
+            
+            "imageUrl":"./assets/image/user-interface (1) 1.png",
+            "text":"ui 1" }
+    ]
+    },
+    {
+        "id":4,
+        "FolderIcon":"./assets/image/3643773_fold_folder_archive_archives_document_icon 2.png",
+        "Title":"Scenario",
+        "navigationUrl":"home/Scenario",
+        "image": "../../assets/image/Group 323.png",
+        "subItems": false,
+        "childItems":[
+            {
+            
+            "imageUrl":"./assets/image/3643773_fold_folder_archive_archives_document_icon 2.png",
+            "text":"journey" }
+    ]
+    },
+    {
+        "id":5,
+        "FolderIcon":"./assets/image/3643773_fold_folder_archive_archives_document_icon 2.png",
+        "Title":"Parts",
+        "navigationUrl":"home/part",
+        "image": "../../assets/image/Group 324.png",
+        "subItems": false,
+        "childItems":[
+            {
+            
+            "imageUrl":"./assets/image/parts.png",
+            "text":"parts" }
+    ]
+    }
+]

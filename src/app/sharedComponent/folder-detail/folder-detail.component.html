@@ -1,0 +1,80 @@
+<ion-grid>
+    <ion-row>
+        <ion-col>
+            <div class="card">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size="">
+                            <ion-row>
+                                <ion-col >
+                                    <div>
+                                        <img class="img" src="../../../assets/image/3643773_fold_folder_archive_archives_document_icon 2.png" alt="">
+                                    </div>
+                                    
+                                </ion-col>
+                                <ion-col size="">
+                                    <label for="">
+                                        vision
+                                    </label>
+                                </ion-col>
+                            </ion-row>
+                        </ion-col>
+                        <ion-col size="7"></ion-col>
+                        <ion-col size="">
+                            <ion-row>
+                                <ion-col size=""><button (click)="EDitClicked()" *ngIf="isEdit" (click)="presentPopover($event)" > <img class="img" src="../../../assets/image/pencil 1.png" alt=""></button></ion-col>
+                                <ion-col size=""><button *ngIf="!isEdit" (click)="saveBtn()" > <img class="img" src="../../../assets/image/save btn.png" alt=""></button></ion-col>
+                                <ion-col size=""><button *ngIf="!isEdit" (click)="closeBtn()"> <img class="img" src="../../../assets/image/cancel btn.png" alt=""></button></ion-col>
+                                <ion-col size=""><button> <img class="img" src="../../../assets/image/Group 48.png" alt=""></button></ion-col>
+                                <ion-col size=""><button> <img class="img" src="../../../assets/image/" alt=""></button></ion-col>
+                                <ion-col size=""><button (click)="presentPopover($event)"><img  src="../../../assets/image/3dot menu btn.png" alt=""></button></ion-col>
+                            </ion-row>
+                        </ion-col>
+                        <ion-content>
+                            <app-popover [isEditMode]="!isEditMode"></app-popover>
+                        </ion-content>
+                    </ion-row>
+                    <div class="box">
+                        <form >
+                    <ion-row>
+                        <div>
+                        <ion-col>
+                            <div>
+                            <ion-row>
+                                <ion-col>
+                                    <label for="Title">Title</label>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-input  [value]="VisionValue" [disabled]="!isEditMode"></ion-input>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div>
+                            <ion-row>
+                                <ion-col>
+                                    <label for="Title">Description</label>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-input [value]="DescriptionValue"  [disabled]="!isEditMode"></ion-input>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        </ion-col>
+                    </div>
+                    </ion-row>
+                </form>
+                </div>
+                <div class="box1">
+                    <ion-row>
+                        <app-last-modification></app-last-modification>
+                    </ion-row>
+                </div>
+                </ion-grid>
+            </div>
+        </ion-col>
+    </ion-row>
+</ion-grid>

@@ -1,0 +1,29 @@
+<ion-grid >
+  <ion-row>
+    <ion-col size="4" *ngFor="let card of cards" (click)="navigateTo(card)">
+      <ion-card class="gap" >
+        <ion-row>
+          <ion-col>
+            <div class="backgrd"> 
+              <img [src]="card.imageurl" alt="img">
+            </div>
+          </ion-col>
+          <ion-col><div><p class="txt">{{card.Title}}</p></div></ion-col>
+          <ion-col><div class="mleft"> <img src="../../assets/3dot menu btn.png" alt=""></div></ion-col>
+        </ion-row>
+        <ion-card-content>
+          <ion-row>
+            <ion-col><div class="bdr"> {{card.tags}}</div></ion-col>
+          </ion-row>
+        </ion-card-content>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              {{card.decription}}
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

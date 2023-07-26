@@ -1,0 +1,27 @@
+[
+    {
+        "Name":"Add new Folder",
+        "image": "../../assets/image/Group 320.png",
+        "path":"/plan/Folder"
+    },
+    {
+        "Name":"Add new Vision",
+        "image": "../../assets/image/Group 321.png",
+        "path":"/plan/vision"
+    },
+    {
+        "Name":"Add new Stories",
+        "image": "../../assets/image/Group 322.png",
+        "path":"/plan/stories"
+    },
+    {
+        "Name":"Add new UserInterface",
+        "image": "../../assets/image/Group 323.png",
+        "path":"/plan/userinterface"
+    },
+    {
+        "Name":"Add new Scenario",
+        "image": "../../assets/image/Group 324.png",
+        "path":"/plan/scenario"
+    }
+]

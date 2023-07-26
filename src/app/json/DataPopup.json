@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "FolderName":"Document",
+        "imageurl":"./assets/image/Camada 2.png",
+        "File":[]
+    },
+    {
+        "id":2,
+        "FolderName":"people",
+        "imageurl":"./assets/image/8675143_ic_fluent_person_regular_icon 1.png",
+        "File":[]
+    },
+    {
+        "id":3,
+        "FolderName":"Tags",
+        "imageurl":"./assets/image/tagitem.png",
+        "File":[]
+    },
+    {
+        "id":4,
+        "FolderName":"Linked item",
+        "imageurl":"./assets/image/linkeditem.png",
+        "File":[]
+    },
+    {
+        "id":5,
+        "FolderName":"Folder",
+        "imageurl":"./assets/image/Group 80.png",
+        "File":[]
+    }
+]

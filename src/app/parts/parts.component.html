@@ -1,0 +1,51 @@
+<ion-grid>
+    <ion-row>
+        <ion-col size="12" style="display: flex;" >
+            <ion-card class="gap" *ngFor="let part of parts" (click)="navigate(part)" >
+                <ion-row>
+                    <ion-col >
+                        <div class="backgrd">
+                            <img class="img" src="{{part.imageurl}}" alt="">
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                       
+                            <p class="txt">{{part.Title}}</p>
+                        
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div class="bdr">
+                            {{part.tags}}
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-card-content>
+                        <ion-row>
+                            <ion-col>
+                                <div>
+                                    {{part.decription}}
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-row>
+                <ion-row>
+                    <ion-card-content>
+                        <ion-row>
+                            <ion-col>
+                                <div>
+                                    <p >
+                                        Tech Stack :  <span><img src="../../assets/parts/image 80.png" alt=""></span> <span><img src="../../assets/parts/image 93.png" alt=""></span> <span><img src="../../assets/parts/angular-svgrepo-com (1) 2.png" alt=""></span>
+                                    </p>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+</ion-grid>

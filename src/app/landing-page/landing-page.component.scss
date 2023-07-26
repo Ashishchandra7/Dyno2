@@ -1,0 +1,47 @@
+.sidenav{
+    position: sticky;
+    display: inline-block;
+    height: 600px;
+    box-shadow: 0 -2px 4px #42bfdd1a, 0 4px 4px #42bfdd1a;
+    border-radius: 8px 8px 8px 8px;
+    width:180px ;
+    margin-top: 10px;
+}
+
+.hamburger{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.btn{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+   padding-left: 25px;
+   padding-top: 35px;
+}
+.flex{
+    display: flex;
+}
+.box{
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    ion-col {
+      width: 100%;
+    }
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+  
+    ion-col {
+      width: 50%;
+    }
+  }
+  
+  .mtop{
+    margin-top: 10px;
+  }

@@ -1,0 +1,30 @@
+<!-- <ion-content class="box" *ngIf="!isEditMode">
+  <ion-list>
+    <div *ngFor="let data of Datapopup">
+      <ion-item (click)="optionSelected(data.FolderName)">
+        <img (click)="presentPopover($event)" [src]="data.imageurl" alt="">
+      </ion-item>
+    </div>
+  </ion-list>
+</ion-content> -->
+
+<ion-content class="box" *ngIf="!isEditMode">
+    <ion-list >
+    <div ><ion-item  (click)="DocPopover($event)" ><img src="../../assets/image/Camada 2.png" alt=""></ion-item></div>
+    <div> <ion-item  (click)="PeoplePopover($event)"> <img src="../../assets/image/8675143_ic_fluent_person_regular_icon 1.png" alt=""></ion-item></div>
+    <div> <ion-item  (click)="TagPopover($event)"> <img src="../../assets/image/tagitem.png" alt=""></ion-item></div>
+    <div> <ion-item  (click)="linkedPopover($event)"> <img src="../../assets/image/linkeditem.png" alt=""></ion-item></div>
+    <div> <ion-item  (click)="FolderPopover($event)"> <img src="../../assets/image/3643773_fold_folder_archive_archives_document_icon 2.png" alt=""></ion-item></div>
+  </ion-list>
+</ion-content>
+
+<ion-content class="box" *ngIf="isEditMode">
+  <ion-list >
+  <div ><ion-item  (click)="DocPopover($event)" ><img src="../../assets/image/add vault-1.png" alt=""></ion-item></div>
+  <div> <ion-item  (click)="PeoplePopover($event)"> <img src="../../assets/image/8675208_ic_fluent_person_add_regular_icon 1.png" alt=""></ion-item></div>
+  <div> <ion-item  (click)="TagPopover($event)"> <img src="../../assets/image/tag.png" alt=""></ion-item></div>
+  <div> <ion-item  (click)="linkedPopover($event)"> <img src="../../assets/image/Vector (2).png" alt=""></ion-item></div>
+  <div> <ion-item  (click)="FolderPopover($event)"> <img src="../../assets/image/Layer_2 (1).png" alt=""></ion-item></div>
+</ion-list>
+</ion-content>
+

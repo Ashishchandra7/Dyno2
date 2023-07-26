@@ -1,0 +1,56 @@
+.gap{
+    margin-top: 5px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.gap:hover{
+border: 2px solid #42BFDD;
+}
+.backgrd{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    border-radius: 30px;
+    background-color: #8C8C8C;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    height: 40px;
+    width: 40px;
+}
+text{
+    margin-left: 45px;
+    font-size: large;
+    font-weight: 700;
+}
+.notific{
+    margin-left: 95px;
+    background-color: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 30px;
+    text-align: center;
+}
+.txt{
+    font-weight: 300;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+.bdr{
+    border: 1px solid #BBE6E4;
+    height: 25px;
+    width: 9rem;
+    border-radius: 15px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    margin-top: 10px;
+}
+
+span{
+    margin-left: 5px;
+}

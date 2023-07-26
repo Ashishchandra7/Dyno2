@@ -1,0 +1,18 @@
+.box{
+   
+    width: 350px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14vh; 
+}
+.gap{
+    margin-top: 10px;
+}
+.mleft{
+    margin-left: 5px;
+    width: 100px;
+    height: 25px;
+    border: 1px solid #F6FDFF ;
+    background: #F6FDFF;
+}

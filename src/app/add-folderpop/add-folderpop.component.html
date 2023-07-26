@@ -1,0 +1,12 @@
+<div class="box">
+  <ion-list>
+    <div>
+      <ion-label>Add new Folder</ion-label>
+    </div>
+    <div *ngFor="let item of items">
+      <ion-item (click)="AddnewFolder(item)">
+        <img [src]="item.image" [alt]="item.alt">
+      </ion-item>
+    </div>
+  </ion-list>
+</div>

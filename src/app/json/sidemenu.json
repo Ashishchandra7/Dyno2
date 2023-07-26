@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "imageurl":"./assets/Group 290.png",
+        "navigation":"home/dash"
+    },
+    {
+        "id":2,
+        "imageurl":"./assets/Group 303.png",
+        "navigation":"home/product"
+    },
+    {
+        "id":3,
+        "imageurl":"./assets/Group 291.png",
+        "navigation":"home/parts"
+    },
+    {
+        "id":4,
+        "imageurl":"./assets/Group 382.png",
+        "navigation":"home/Resources"
+    },
+    {
+        "id":5,
+        "imageurl":"./assets/Group 288.png",
+        "navigation":"home/Settings"
+    }
+]

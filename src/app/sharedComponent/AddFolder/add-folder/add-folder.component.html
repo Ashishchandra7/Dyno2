@@ -1,0 +1,68 @@
+<div class="add-new-folder">
+    <form class="formClass">
+        <ion-row>
+            <ion-col>
+                <div class="popupTitle">{{receivedData.Name}} </div>
+            </ion-col>
+            <ion-col size-md="1"><ion-icon name="close" (click)="Popup()" class="closebtn"></ion-icon></ion-col>
+        </ion-row>
+
+        <div class="input-form">
+            <div class="form-row">
+                <ion-row>
+                    <ion-label class="inputLabel">Title</ion-label>
+                </ion-row>
+                <ion-row>
+                    <ion-input class="formInput pl-0" formControlName="title"></ion-input>
+                </ion-row>
+            </div>
+            <div class="form-row">
+                <ion-row>
+                    <ion-label class="inputLabel">Description</ion-label>
+                </ion-row>
+                <ion-row>
+                    <ion-textarea class="formInput pl-0 no-scroll" formControlName="description"
+                        autogrow="true"></ion-textarea>
+                </ion-row>
+            </div>
+        </div>
+
+        <div>
+            <ion-row>
+                <ion-label class="inputLabel">Select folder</ion-label>
+            </ion-row>
+            <div class="select-dropdown">
+                <ion-row>
+                    <ion-col size="10">
+                        <div>{{receivedData.path}}</div>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-row (click)="toggleDropdown()"><img
+                                src="../../../../assets/image/Layer_2 (1).png" /></ion-row>
+                        <ion-row (click)="toggleDropdown()">
+                            <div class="change">Change</div>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+                <div id="dropdown-content" class="dropdown-content">
+                    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group">
+                        <ion-row><ion-col><img src="../../../../assets/image/notebok.png" alt=""> plan</ion-col> </ion-row>
+                        <mat-radio-button class="example-radio-button" *ngFor="let path of paths" [value]="path">
+                            <ion-row><ion-col size="6"><img src="../../../../assets/image/3643773_fold_folder_archive_archives_document_icon 2.png" alt=""> </ion-col> 
+                            <ion-col size="9">{{path}}</ion-col>
+                            </ion-row>
+                        </mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+            </div>
+        </div>
+        <div class="button-div">
+            <ion-row class="mleft">
+                <ion-col></ion-col>
+                <ion-col><ion-button class="cancel-btn">Cancel</ion-button></ion-col>
+                <ion-col><ion-button class="add-btn">Save</ion-button></ion-col>
+            </ion-row>
+        </div>
+    </form>
+</div>

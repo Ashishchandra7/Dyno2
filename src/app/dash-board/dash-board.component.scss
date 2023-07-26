@@ -1,0 +1,237 @@
+ion-row{
+    display: flex;
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 50%;
+   background-color: #F9F8F6;
+   flex-direction: row;
+  }
+  .top{
+    padding-bottom: 170px;
+  }
+  
+  .text{max-height: 55px;
+    max-width: 45px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #199AB7;
+    font-family: "Poppins";
+    margin-left: 5px;
+  }
+  .text1{max-height: 40px;
+    max-width: 40px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #199AB7;
+    font-family: "Poppins";
+    margin-left: 5px;
+    
+  }
+  .div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+   width: 50%;
+   background-color:#ffffff;
+  }
+.box{
+    width: 504px;
+    height: 250px;
+    border: 1px solid #03fce8;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:hover {
+    border: 3px solid #199AB7;
+  }
+.box:hover{
+    border: 3px solid #199AB7;
+}
+
+.btn2:hover{
+    border: 3px solid #199AB7;
+}
+.btn:hover{
+    border: 5px solid #199AB7;
+}
+input{
+    padding-left: 25px;
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Poppins';
+}
+.inpt{
+    height: 35px;
+    width:22rem;
+    border:1px solid #199AB7;
+    border-radius: 5px;
+    font-family: "Poppins";
+}
+.btn2{
+    height: 50px;
+    width: 503px;
+    border: 1px solid #03fce8;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: larger;
+    box-shadow: 2px 2px 2px #f3f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn{
+    height: 40px;
+    width: 300px;
+    border-radius: 4px;
+    background-color: #199AB7;
+    color: #ffffff;
+    font-size: larger;
+    box-shadow: 0px 2px 1px  gray;
+}
+.btn:hover{
+    border: 5px solid #199AB7;
+}
+.bxbtn{
+    margin-top: 55px;
+}
+.nxt{
+    margin-top: 15px;
+    margin-left: 80px;
+}
+.nxt1{
+    margin-top: 25px;
+    margin-left: 22px;
+}
+.mlft{
+    margin-right: 5px;
+}
+.center{
+    text-align: center;
+}
+
+@media (min-width: 240px) and (max-width: 1080px) {
+
+    .box{
+        width: 344px;
+        height: 174px;
+    
+    }
+
+    .inpt{
+        height: 25px;
+        width:16rem;
+        
+    }
+    .btn{
+        height: 25px;
+        width: 185px;
+    }
+    .btn2{
+        height: 40px;
+        width: 344px;
+    }
+
+    .nxt{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 680px) {
+
+    .box{
+        width: 249px;
+        height: 123px;
+      padding-left: 5px;
+    }
+
+    .inpt{
+        height: 25px;
+        width:10rem;
+        
+    }
+    .btn{
+        height: 20px;
+        width: 105px;
+    }
+    .btn2{
+        height: 40px;
+        width: 249px;
+    }
+
+    .nxt{
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .text{
+        font-size: 2rem;
+    }
+}
+
+.Resend{
+    height: 44px;
+    width: 296px;
+    border: 5px solid #199AB7;
+    background-color:#199AB7 ;
+    color: white;
+}
+
+#timer{
+    color: greenyellow;
+}
+
+@media (max-width: 767px) {
+  
+    .text {
+      width: 100px;
+      height: auto;
+    }
+    .text1, .center {
+      text-align: center;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  
+   
+    .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+ 
+  @media (min-width: 768px) and (max-width: 1023px) {
+  
+    .text {
+      width: 150px;
+      height: auto;
+    }
+  
+    .text1, .center {
+      text-align: center;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    
+    .btn {
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+  }

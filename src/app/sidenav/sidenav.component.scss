@@ -1,0 +1,39 @@
+.sidenav{
+    position: sticky;
+    display: inline-block;
+    height: 565px;
+    background: #42BFDD;
+    box-shadow: 0 -2px 4px #42bfdd1a, 0 4px 4px #42bfdd1a;
+    border-radius: 0 8px 8px 0;
+    width:160px ;
+    margin-top: 10px;
+    
+}
+.hamburger{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.btn{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+   padding-left: 25px;
+   padding-top: 35px;
+}
+.btn:hover{
+    border: 2px solid #42BFDD;
+}
+
+button{
+    background: transparent;
+}
+// .div{
+//     margin-top: 5px;
+//     border: 1px solid black;
+// padding-left: 2px;
+// width: 5rem;
+// height: 1rem;
+// }
+

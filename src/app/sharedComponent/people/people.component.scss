@@ -1,0 +1,40 @@
+.box{
+   
+    width: 550px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; 
+}
+
+.box1{
+    padding-left: 25px;
+    height: 50px;
+    width: 200px;
+    border: 1px solid #F6FDFF;
+    background-color: #F6FDFF;
+    border-radius: 8px;
+}
+
+.mleft{
+    margin-left: 15px;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #405065;
+  }
+  
+  .search{
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin:auto;
+  }
+  
+  .form-control {
+    box-shadow: 0 10px 40px 0 #B0C1D9;
+  }
+  .form-control::placeholder  {
+    font-family: FontAwesome;
+  }

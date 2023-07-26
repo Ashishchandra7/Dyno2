@@ -1,0 +1,62 @@
+<ion-grid>
+    <ion-row>
+        <ion-col class="div1">
+            <div class="top">
+            <img  class="text"src="../../assets/Dyno_logo_new.png" alt="">
+            <span class="text1">Ti Dyno</span>
+            <span class="center">
+                <p>Sales Enabler & Solution Accelerator</p>
+            </span>
+        </div> 
+        </ion-col>
+        <ion-col class="div2" >
+            <ion-row>
+                <ion-col>
+                    <div class="box" *ngIf="!showotpform" >
+                        <form [formGroup]="reactiveForm" (ngSubmit)="toggleDisplayDiv()">
+                            <input type="email" id="myInput" class="inpt" formControlName="email" placeholder="Email ID"> 
+                            <p style="color: red;" *ngIf="!reactiveForm.valid && reactiveForm.touched">
+                                Please enter a valid email address.
+                              </p>
+                              <p style="color: red;" *ngIf="reactiveForm.get('email')?.hasError('pattern')">
+                                Please enter a correct email address
+                            </p>
+                            <div class="nxt1">
+                                <button [disabled] = "!reactiveForm.valid" class="btn" id="login" (click)=toggleDisplayDiv() type="submit">NEXT</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box" *ngIf="showotpform">
+                        <form [formGroup]="otpForm">
+                          <input type="number" formControlName="otp" class="inpt" placeholder="Enter OTP">
+                    
+                          <!-- <div *ngIf="otpForm.get('otp').invalid && (otpForm.get('otp').dirty || otpForm.get('otp').touched)">
+                            <div *ngIf="otpForm.get('otp').errors.required">OTP is required.</div>
+                            <div *ngIf="otpForm.get('otp').errors.minlength">OTP should be at least 4 digits.</div>
+                          </div> -->
+                      
+                          <div class="nxt" [hidden]="isShowDiv">
+                            <p>Time remaining: <span id="timer">00:00</span></p>
+                          </div>
+                      
+                          <div class="nxt1">
+                            <button class="btn" id="login" type="submit" (click)="login()" [disabled]="otpForm.invalid">LOGIN</button>
+                            <div *ngIf="!showLoginButton">
+                              <button type="submit" class="Resend" [disabled]="otpForm.invalid">Resend</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    <div class="bxbtn">
+                        <button class="btn2">
+                            <span class="mlft">sign in with Google</span>
+                            <img src="../../assets/Google_Logo.png" alt="">
+                        </button>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+  <router-outlet></router-outlet>
+ 
