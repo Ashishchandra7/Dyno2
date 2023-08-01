@@ -37,10 +37,8 @@
                         <ion-row >
                             <ul *ngFor="let text of menu.childItems">
                                 <li>
-                            <ion-col size="3"> <img src="{{text.imageUrl}}" alt=""></ion-col>
-                            <ion-col size="4">
-                                        {{text.text}}
-                            </ion-col>
+                                   <ion-col size="3"> <img src="{{text.imageUrl}}" alt=""></ion-col>
+                                    <ion-col size="4">{{text.text}}</ion-col>
                                 </li>
                             </ul>
                         </ion-row>

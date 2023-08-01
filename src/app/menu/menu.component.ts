@@ -19,7 +19,7 @@ export class MenuComponent {
   }
 
   SwitchTab(){
-    this.router.navigate(['home/landing'])
+    this.router.navigate(['home/landing/app-detail'])
   }
 
   toggleFolder( menu:any){

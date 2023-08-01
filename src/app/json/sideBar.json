@@ -2,20 +2,24 @@
   
     {
         "id":2,
-        "imageurl":"./assets/image/Plans menu option.png"
+        "imageurl":"./assets/image/Plans menu option.png",
+        "navigation":"home/landing/plan"
         
     },
     {
         "id":3,
-        "imageurl":"./assets/Group 381.png"
+        "imageurl":"./assets/Group 381.png",
+        "navigation":"home/landing/make"
         
     },
     {
         "id":4,
-        "imageurl":"./assets/Group 305.png"    
+        "imageurl":"./assets/Group 305.png",
+        "navigation":"home/landing/use"    
     },
     {
         "id":5,
-        "imageurl":"./assets/Group 288.png"    
+        "imageurl":"./assets/Group 288.png",
+        "navigation":"home/landing/settings"    
     }
 ]

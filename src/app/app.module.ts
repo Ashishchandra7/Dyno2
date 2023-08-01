@@ -46,6 +46,11 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 import { PartAComponent } from './sharedComponent/part-a/part-a.component';
+import { AddAuthorisedComponent } from './sharedComponent/add-authorised/add-authorised.component';
+import { SettingsComponent } from './sharedComponent/settings/settings.component';
+import { PlanComponent } from './sharedComponent/plan/plan.component';
+import { MakeComponent } from './sharedComponent/make/make.component';
+import { UseComponent } from './sharedComponent/use/use.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -83,6 +88,11 @@ import { PartAComponent } from './sharedComponent/part-a/part-a.component';
     UploadCommonFolderComponent,
     SearchBarDropdownComponent,
     PartAComponent,
+    AddAuthorisedComponent,
+    SettingsComponent,
+    PlanComponent,
+    MakeComponent,
+    UseComponent,
     
    
   ],

@@ -2,14 +2,16 @@
     margin-top: 5px;
     margin: 10px;
     padding: 10px;
+    width: 25rem;
+    height: 16rem;
     
 }
 .gap:hover{
 border: 2px solid #42BFDD;
 }
 .backgrd{
-    height: 60px;
-    width: 60px;
+    height: 65px;
+    width: 65px;
     display: flex;
     border-radius: 30px;
     background-color: #8C8C8C;
@@ -38,15 +40,15 @@ text{
     font-size: larger;
     font-weight: bold;
     margin-top: 10px;
-    margin-right: 8px;
+    margin-right: 12px;
 }
 .bdr{
     border: 1px solid #BBE6E4;
     height: 25px;
-    width: 9rem;
+    width: 3rem;
     border-radius: 15px;
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-left: 2px;
+    padding-left: 2px;
     padding-top: 2px;
     margin-top: 10px;
 }

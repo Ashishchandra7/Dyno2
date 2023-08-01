@@ -4,7 +4,7 @@
             <div class="card">
                 <ion-grid>
                     <ion-row>
-                        <ion-col size="">
+                        <ion-col size="1">
                             <ion-row>
                                 <ion-col >
                                     <div>
@@ -19,15 +19,21 @@
                                 </ion-col>
                             </ion-row>
                         </ion-col>
-                        <ion-col size="7"></ion-col>
+                        <ion-col size="6"></ion-col>
                         <ion-col size="">
                             <ion-row>
-                                <ion-col size=""><button (click)="EDitClicked()" *ngIf="isEdit" (click)="presentPopover($event)" > <img class="img" src="../../../assets/image/pencil 1.png" alt=""></button></ion-col>
-                                <ion-col size=""><button *ngIf="!isEdit" (click)="saveBtn()" > <img class="img" src="../../../assets/image/save btn.png" alt=""></button></ion-col>
-                                <ion-col size=""><button *ngIf="!isEdit" (click)="closeBtn()"> <img class="img" src="../../../assets/image/cancel btn.png" alt=""></button></ion-col>
-                                <ion-col size=""><button> <img class="img" src="../../../assets/image/Group 48.png" alt=""></button></ion-col>
-                                <ion-col size=""><button> <img class="img" src="../../../assets/image/" alt=""></button></ion-col>
-                                <ion-col size=""><button (click)="presentPopover($event)"><img  src="../../../assets/image/3dot menu btn.png" alt=""></button></ion-col>
+                                <ion-col size="1"><button (click)="EDitClicked()" *ngIf="isEdit" (click)="presentPopover($event)" > <img class="img" src="../../../assets/image/pencil 1.png" alt=""></button></ion-col>
+                                <ion-col size="1"><button *ngIf="!isEdit" (click)="saveBtn()" > <img class="img" src="../../../assets/image/save btn.png" alt=""></button></ion-col>
+                                <ion-col size="1"><button *ngIf="!isEdit" (click)="closeBtn()"> <img class="img" src="../../../assets/image/cancel btn.png" alt=""></button></ion-col>
+                                <ion-col size="2"><button> <img class="img" src="../../../assets/image/Group 48.png" alt=""></button></ion-col>
+                                <ion-col size="4"><div>
+                                            <div class="box1" style="display: flex;">
+                                                <p>Draft</p> <img style="height: 8px;margin-left: 15px;margin-top: 5px;"
+                                                    src="../../../assets/parts/Polygon 14.png" alt="">
+                                            </div>
+
+                                        </div></ion-col>
+                                <ion-col size=""><button style="padding-left: 8px;" (click)="presentPopover($event)"><img  src="../../../assets/image/3dot menu btn.png" alt=""></button></ion-col>
                             </ion-row>
                         </ion-col>
                         <ion-content>

@@ -1,7 +1,7 @@
 <div>
     <ion-grid>
         <ion-row>
-            <ion-col>
+            <ion-col class="border">
                 <div class="PartA">
                     <div class="padng">
                         <ion-row>
@@ -14,10 +14,15 @@
                             <ion-col size="6">
                                 <ion-row>
                                     <ion-col>
-                                        <div><button (click)="EditClicked()"><img class="iconHt" src="../../../assets/parts/pencil 1.png" alt=""></button> </div>
-                                        <div>
-                                            <ion-col size=""><button *ngIf="!isEdit" (click)="saveBtn()" > <img class="img" src="../../../assets/image/save btn.png" alt=""></button></ion-col>
-                                <ion-col size=""><button *ngIf="!isEdit" (click)="closeBtn()"> <img class="img" src="../../../assets/image/cancel btn.png" alt=""></button></ion-col>
+                                        <div><button (click)="EditClicked()" *ngIf="isEdit"><img class="iconHt"
+                                                    src="../../../assets/parts/pencil 1.png" alt=""></button> </div>
+                                        <div style="display: flex;" *ngIf="!isEdit">
+                                            <ion-col size=""><button (click)="saveBtn()"> <img class="img"
+                                                        src="../../../assets/image/save btn.png"
+                                                        alt=""></button></ion-col>
+                                            <ion-col size=""><button (click)="closeBtn()"> <img class="img"
+                                                        src="../../../assets/image/cancel btn.png"
+                                                        alt=""></button></ion-col>
                                         </div>
                                     </ion-col>
                                     <ion-col>
@@ -53,7 +58,8 @@
                                                     </ion-row>
                                                     <ion-row>
                                                         <ion-col>
-                                                            <ion-input>shad</ion-input>
+                                                            <ion-input [value]="VisionValue"
+                                                                [disabled]="!isEditMode"></ion-input>
                                                         </ion-col>
                                                     </ion-row>
                                                 </div>
@@ -65,8 +71,8 @@
                                                     </ion-row>
                                                     <ion-row>
                                                         <ion-col>
-                                                            <ion-input [value]="DescriptionValue"  [disabled]="!isEditMode">Lorem, ipsum dolor sit amet consectetur
-                                                                adipisicing elit</ion-input>
+                                                            <ion-input [value]="DescriptionValue"
+                                                                [disabled]="!isEditMode"></ion-input>
                                                         </ion-col>
                                                     </ion-row>
                                                 </div>
@@ -183,21 +189,77 @@
             <ion-col>
                 <div class="PartB">
                     <div>
-                        <h3>Associated Products</h3>
+                        <h3>Associated Products <span *ngIf="!isEdit" (click)="presentPopover($event)"><img
+                                    src="../../../assets/parts/add 7.png" alt=""></span></h3>
                         <div class="boxlist">
                             <div>
                                 <ol>
-                                    <li> <img class="imgheight" src="../../../assets/parts/Dyno logo.png" alt="">
-                                        <span>Dyno</span>
+                                    <li>
+                                        <ion-row>
+                                            <ion-col size="1">
+                                                <div><img src="../../../assets/parts/Dyno logo.png" alt=""></div>
+                                            </ion-col>
+                                            <ion-col size="8">
+                                                <div>Dyno</div>
+                                            </ion-col>
+                                            <ion-col size="1">
+                                                <div *ngIf="!isEdit"><img
+                                                        src="../../../assets/parts/all-directions 2.png" alt=""></div>
+                                            </ion-col>
+                                            <ion-col size="1">
+                                                <div *ngIf="!isEdit"><img src="../../../assets/parts/bin 2.png" alt="">
+                                                </div>
+                                            </ion-col>
+                                        </ion-row>
                                     </li>
-                                    <li> <img class="imgheight" src="../../../assets/parts/Group 207.png" alt="">
-                                        <span>Artist Pass</span>
+                                    <li> <ion-row>
+                                            <ion-col size="1">
+                                                <div><img src="../../../assets/parts/Group 207.png" alt=""></div>
+                                            </ion-col>
+                                            <ion-col size="8">
+                                                <div>Artist Pass</div>
+                                            </ion-col>
+                                            <ion-col size="1">
+                                                <div *ngIf="!isEdit"><img
+                                                        src="../../../assets/parts/all-directions 2.png" alt=""></div>
+                                            </ion-col>
+                                            <ion-col size="1">
+                                                <div *ngIf="!isEdit"><img src="../../../assets/parts/bin 2.png" alt="">
+                                                </div>
+                                            </ion-col>
+                                        </ion-row>
                                     </li>
-                                    <li> <img class="imgheight" src="../../../assets/parts/idea 5.png" alt="">
-                                        <span>Product idea</span>
+                                    <li> <ion-row>
+                                            <ion-col size="1">
+                                                <div><img src="../../../assets/parts/idea 5.png" alt=""></div>
+                                            </ion-col>
+                                            <ion-col size="8">
+                                                <div>Project idea</div>
+                                            </ion-col>
+                                            <ion-col size="1">
+                                                <div *ngIf="!isEdit"><img
+                                                        src="../../../assets/parts/all-directions 2.png" alt=""></div>
+                                            </ion-col>
+                                            <ion-col size="1">
+                                                <div *ngIf="!isEdit"><img src="../../../assets/parts/bin 2.png" alt="">
+                                                </div>
+                                            </ion-col>
+                                        </ion-row>
                                     </li>
-                                    <li> <img class="imgheight" src="../../../assets/parts/idea 6.png" alt="">
-                                        <span>ABC</span>
+                                    <li> <ion-row>
+                                            <ion-col size="1">
+                                                <div><img src="../../../assets/parts/idea 6.png" alt=""></div>
+                                            </ion-col>
+                                            <ion-col size="8"><span>ABC</span></ion-col>
+                                            <ion-col size="1">
+                                                <div *ngIf="!isEdit"><img
+                                                        src="../../../assets/parts/all-directions 2.png" alt=""></div>
+                                            </ion-col>
+                                            <ion-col size="1">
+                                                <div *ngIf="!isEdit"><img src="../../../assets/parts/bin 2.png" alt="">
+                                                </div>
+                                            </ion-col>
+                                        </ion-row>
                                     </li>
                                 </ol>
                             </div>

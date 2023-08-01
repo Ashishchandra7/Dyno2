@@ -15,6 +15,10 @@ import { ScenarioComponent } from './sharedComponent/scenario/scenario.component
 import { PartComponent } from './sharedComponent/part/part.component';
 import { AppDetailComponent } from './app-detail/app-detail.component';
 import { PartAComponent } from './sharedComponent/part-a/part-a.component';
+import { SettingsComponent } from './sharedComponent/settings/settings.component';
+import { PlanComponent } from './sharedComponent/plan/plan.component';
+import { MakeComponent } from './sharedComponent/make/make.component';
+import { UseComponent } from './sharedComponent/use/use.component';
 
 
 const routes: Routes = [
@@ -31,7 +35,11 @@ const routes: Routes = [
       {path:'Settings',component:SettingComponent},
       {path:'landing',component:LandingPageComponent,children:[
         {path:'app-detail',component:AppDetailComponent},
-        {path:'PartA',component:PartAComponent}
+        {path:'PartA',component:PartAComponent},
+        {path:'plan',component:PlanComponent},
+        {path:'make',component:MakeComponent},
+        {path:'use',component:UseComponent},
+        {path:'settings',component:SettingsComponent},
       ]},
       {path:'vision',component:VisionComponent},
       {path:'stories',component:StoriesComponent},
